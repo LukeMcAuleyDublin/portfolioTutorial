@@ -1,0 +1,9 @@
+{
+    "greeting": "Welkom!",
+    "introduction": "My name is Luke from Dublin, Ireland.",
+    "languages": [
+        {"name":"JS", "years": 3},
+        {"name":"Python", "years":3},
+        {"name":"C++", "years":4}
+    ]
+}
