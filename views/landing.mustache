@@ -1,12 +1,20 @@
 <html>
 
 <head>
-    <title>Luke McAuley</title>
+    <title>{{global.site_name}}</title>
 </head>
 
 <body>
-    <h1>{{greeting}}</h1>
-    <p>{{introduction}}</p>
+    <h1>{{page.greeting}}</h1>
+    <p>{{page.introduction}}</p>
+
+    <ol>
+        {{#page.languages}}
+        <li>{{name}}, {{years}} years of experience </li>
+        {{/page.languages}}
+    </ol>
+
 </body>
+
 
 </html>

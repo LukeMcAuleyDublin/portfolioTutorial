@@ -2,11 +2,8 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    const data = {
-        greeting: 'Welkom!',
-        introduction: 'My name is Luke from Dublin, Ireland.'
-    }
 
+    const data = req.context
     res.render('landing', data)
 })
 
