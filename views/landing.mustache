@@ -1,20 +1,29 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
     <title>{{global.site_name}}</title>
+    <meta name="description" content="" />
+
+    {{>head}}
 </head>
 
 <body>
-    <h1>{{page.greeting}}</h1>
-    <p>{{page.introduction}}</p>
+    <div class="blocks-page">
+        {{>header2}}
 
-    <ol>
-        {{#page.languages}}
-        <li>{{name}}, {{years}} years of experience </li>
-        {{/page.languages}}
-    </ol>
+        {{>hero}}
+        {{>features}}
+        {{>gallery}}
+        {{>pricing}}
+        {{>testimonial}}
+        {{>faq}}
+        {{>service}}
+        {{>posts}}
+        {{>contact}}
 
+        {{>footer}}
+    </div>
+
+    {{>scripts}}
 </body>
-
-
 </html>
