@@ -2,28 +2,15 @@
 <html lang="en">
 <head>
     <title>{{global.site_name}}</title>
-    <meta name="description" content="" />
 
-    {{>head}}
 </head>
 
 <body>
-    <div class="blocks-page">
-        {{>header2}}
-
-        {{>hero}}
-        {{>features}}
-        {{>gallery}}
-        {{>pricing}}
-        {{>testimonial}}
-        {{>faq}}
-        {{>service}}
-        {{>posts}}
-        {{>contact}}
-
-        {{>footer}}
-    </div>
-
-    {{>scripts}}
+    <h1>{{page.greeting}}</h1>
+    <h2>{{page.introduction}}</h2>
+    {{#page.languages}}
+    <h3>{{name}}, {{years}} years of experience</h3>
+    {{/page.languages}}
+</body>
 </body>
 </html>
