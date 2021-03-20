@@ -1,3 +1,5 @@
+// routing for the landing.mustache page
+// 'data' on this JS file comes from 'landing.json'
 const express = require('express')
 const ProjectController = require('../controllers/ProjectController')
 const router = express.Router()
