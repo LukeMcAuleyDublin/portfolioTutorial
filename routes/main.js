@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
     
     projectCtr.get()
     .then(projects => {
+        data['projects'] = projects
         console.log('Projects: ' + JSON.stringify(projects))
         res.render('landing', data)
     }) .catch(err => {
