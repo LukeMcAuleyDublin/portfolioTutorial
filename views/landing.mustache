@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>{{global.site_name}}</title>
-
+    <meta name="description" content="" />
+    {{>head}}
 </head>
 
 <body>
@@ -21,8 +22,8 @@
                         <img src="{{{image}}}" class="img-fluid w-100 d-block">
                         <div class="overlay-box">
                             <div class="overlay-inner overlay-content">
-                                <h5 class="mb-0">Portfolio</h5>
-                                <p>Design</p>
+                                <h5 class="mb-0">{{name}}</h5>
+                                <p>{{category}}</p>
                             </div>
                         </div>
                     </div>
@@ -31,6 +32,5 @@
         </div>
         {{/projects}}
         {{>scripts}}
-</body>
 </body>
 </html>
