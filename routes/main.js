@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 })
 
-router.get('project/:slug', (req, res) => {
+router.get('/project/:slug', (req, res) => {
     const data = req.context
     const projectSlug = req.params.slug
     
@@ -37,7 +37,7 @@ router.get('project/:slug', (req, res) => {
         res.render('project', data)
     })
     .catch(err => {
-        res.send(err.message)
+        res.send("ERROR:" +err.message)
     })
 })
 
