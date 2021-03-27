@@ -20,6 +20,7 @@ router.get('/', (req, res) => {
 
 })
 
+// Renders pages for individual projects
 router.get('/project/:slug', (req, res) => {
     const data = req.context
     const projectSlug = req.params.slug
